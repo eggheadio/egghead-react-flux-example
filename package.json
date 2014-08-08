@@ -1,0 +1,23 @@
+{
+  "name": "flux",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "envify": "^1.2.1",
+    "es6-promise": "^1.0.0",
+    "gulp": "^3.8.0",
+    "gulp-browserify": "^0.5.0",
+    "gulp-concat": "^2.2.0",
+    "react": "^0.10.0",
+    "react-async": "^0.9.4",
+    "react-router-component": "^0.19.0",
+    "reactify": "^0.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
