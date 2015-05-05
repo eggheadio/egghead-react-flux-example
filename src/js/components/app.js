@@ -2,17 +2,25 @@
 var React = require('react');
 var Catalog = require('./catalog/app-catalog.js');
 var Cart = require('./cart/app-cart.js');
+var Router = require('react-router-component');
+var CatalogDetail = require('./product/app-catalogdetail.js');
+var Template = require ('./app-template.js');
+
+var Locations = Router.Locations;
+var Location = Router.Location;
+
 
 var APP = 
   React.createClass({
     render: function(){
       return (
-          <div>
-          <h1> Lets Shop</h1>
-          <Catalog />
-          <h1>Cart</h1>
-          <Cart />
-          </div>
+          <Template>
+            <Locations> 
+              <Location path="/" handler={Catalog} />
+              <Location path="/cart" handler={Cart} />
+              <Location path="/item/:item" handler={CatalogDetail} />
+            </Locations>
+          </Template>
         )
     }
   });
