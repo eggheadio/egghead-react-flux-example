@@ -1,13 +1,14 @@
-var Dispatcher = require('./dispatcher.js');
-var merge = require('react/lib/merge');
+var AppDispatcher = require('./dispatcher.js');
 
-var AppDispatcher = merge(Dispatcher.prototype, {
-  handleViewAction: function(action){
-    this.dispatch({
-      source: 'VIEW_ACTION',
-      action:action
-    })
-  }
-})
+/**
+ * @param {object} action The details of the action, including the action's
+ * type and additional data coming from the server.
+ */
+AppDispatcher.handleAction = function (action) {
+  this.dispatch({
+    source: 'VIEW_ACTION',
+    action: action
+  })
+};
 
 module.exports = AppDispatcher;
