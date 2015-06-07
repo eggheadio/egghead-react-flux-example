@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 var AppStore = require('../../stores/app-store.js');
 var AddToCart = require('./app-addtocart.js');
@@ -14,7 +13,7 @@ var Catalog =
     mixins: [new StoreWatchMixin(getCatalog)],
     render:function(){
       var items = this.state.items.map(function(item){
-        return <CatalogItem item={item} />
+        return <CatalogItem key={item.id} item={item} />
       })
       return (
           <div className="row">

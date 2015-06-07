@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react'),
     AddToCart = require('./app-addtocart.js'),
     Link = require('react-router-component').Link;

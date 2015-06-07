@@ -1,23 +1,30 @@
 {
   "name": "flux",
   "version": "0.0.0",
-  "description": "",
+  "description": "<a href=\"https://egghead.io/series/react-flux-architecture\">![egghead react flux architecture](https://d2eip9sf3oo6c2.cloudfront.net/series/covers/000/000/005/full/react_flux_series_banner_2.png?1404147531)</a>",
   "main": "gulpfile.js",
   "dependencies": {
-    "envify": "^1.2.1",
-    "es6-promise": "^1.0.0",
-    "gulp": "^3.8.0",
-    "gulp-browserify": "^0.5.0",
-    "gulp-concat": "^2.2.0",
-    "react": "^0.10.0",
-    "react-async": "^0.9.4",
-    "react-router-component": "^0.19.0",
-    "reactify": "^0.13.1"
+    "browserify": "^10.2.4",
+    "flux": "^2.0.3",
+    "gulp": "^3.9.0",
+    "react": "^0.13.3",
+    "react-async": "^2.1.0",
+    "react-router-component": "^0.25.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eggheadio/egghead-react-flux-example.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eggheadio/egghead-react-flux-example/issues"
+  },
+  "homepage": "https://github.com/eggheadio/egghead-react-flux-example"
 }

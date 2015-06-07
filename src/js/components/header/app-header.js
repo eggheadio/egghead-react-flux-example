@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 var CartSummary = require('./app-cartsummary.js');
 var Header =
