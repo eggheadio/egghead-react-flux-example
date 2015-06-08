@@ -1,8 +1,7 @@
-/** @jsx React.DOM */
-var Template =
-  React.createClass({
-    render:function(){
-      return ()
-    }
-  });
+var Template = React.createClass({
+  render:function(){
+    return null
+  }
+});
+
 module.exports = Template;

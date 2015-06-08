@@ -1,8 +1,7 @@
-/** @jsx React.DOM */
-var Header =
-  React.createClass({
-    render:function(){
-      return ()
-    }
-  });
-  module.exports = Header;
+var Header = React.createClass({
+  render:function(){
+    return null
+  }
+});
+
+module.exports = Header;
