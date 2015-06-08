@@ -1,8 +1,9 @@
-/** @jsx React.DOM */
-var CatalogItem =
-  React.createClass({
-    render:function(){
-      return ()
-    }
-  });
-  module.exports = CatalogItem;
+var React = require('react');
+
+var CatalogItem = React.createClass({
+  render:function(){
+    return null
+  }
+});
+
+module.exports = CatalogItem;
