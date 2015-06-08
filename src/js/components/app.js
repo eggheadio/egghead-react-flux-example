@@ -1,14 +1,13 @@
-/** @jsx React.DOM */
 var React = require('react');
-var AppActions = require('../actions/app-actions.js');
+var AppActions = require('../actions/app-actions');
 
-var APP = 
-  React.createClass({
-    handleClick:function(){
-      AppActions.addItem('this is the item');
-    },
-    render: function(){
-      return <h1 onClick={this.handleClick}>MY FLUX APP</h1>
-    }
-  });
-module.exports = APP;
+var App = React.createClass({
+  handler: function(){
+    AppActions.addItem('this is an item')
+  },
+  render:function(){
+    return <h1 onClick={this.handler}>My Flux App</h1>
+  }
+});
+
+module.exports = App;
