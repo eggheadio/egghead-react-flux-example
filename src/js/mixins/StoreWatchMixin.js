@@ -1,11 +1,10 @@
-/** @jsx React.DOM */
 var React = require('react');
-var AppStore = require('../stores/app-store.js');
+var AppStore = require('../stores/app-store');
 
 var StoreWatchMixin = function(cb){
   return {
     getInitialState:function(){
-      return cb(this);
+      return cb()
     },
     componentWillMount:function(){
       AppStore.addChangeListener(this._onChange)
@@ -13,8 +12,8 @@ var StoreWatchMixin = function(cb){
     componentWillUnmount:function(){
       AppStore.removeChangeListener(this._onChange)
     },
-    _onChange:function(){
-      this.setState(cb(this))
+    _onChange: function(){
+      this.setState(cb())
     }
   }
 }
