@@ -4,6 +4,7 @@ var RemoveFromCart = require('./app-removefromcart.js');
 var Increase = require('./app-decreaseitem')
 var Decrease = require('./app-increaseitem')
 var StoreWatchMixin = require('../../mixins/StoreWatchMixin');
+var Link = require('react-router-component').Link
 
 function cartItems(){
   return {items: AppStore.getCart()}
@@ -30,6 +31,7 @@ var Cart = React.createClass({
       );
     })
     return (
+      <div>
       <table className="table table-hover">
           <thead>
               <tr>
@@ -50,6 +52,8 @@ var Cart = React.createClass({
               </tr>
             </tfoot>
           </table>
+          <Link href="/">Continue Shopping</Link>
+        </div>
     )
   }
 });
