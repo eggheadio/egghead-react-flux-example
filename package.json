@@ -1,16 +1,17 @@
 {
-  "name": "flux",
+  "name": "egghead-flux-example",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "browserify": "^10.2.4",
+    "flux": "^2.0.3",
+    "gulp": "^3.9.0",
     "react": "^0.13.3",
     "react-async": "^2.1.0",
-    "gulp": "^3.9.0",
     "react-router-component": "^0.25.1",
-    "vinyl-source-stream": "^1.1.0",
-    "reactify": "^1.1.1"
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
