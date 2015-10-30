@@ -22,7 +22,9 @@ var Catalog = React.createClass({
     })
     return (
       <table className="table table-hover">
-        {items}
+        <tbody>
+          {items}
+        </tbody>
       </table>
     )
   }
