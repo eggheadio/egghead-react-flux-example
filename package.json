@@ -15,7 +15,14 @@
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "connect": "^3.5.0",
+    "del": "^2.2.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-open": "^2.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "vinyl-buffer": "^1.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
