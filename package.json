@@ -4,14 +4,13 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "browserify": "^10.2.6",
+    "browserify": "^13.1.1",
     "envify": "^3.4.0",
     "flux": "^2.1.1",
     "gulp": "^3.9.0",
-    "react": "^0.14.0",
-    "react-async": "^2.1.0",
-    "react-dom": "^0.14.0",
-    "react-router-component": "^0.27.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router-component": "^0.36.1",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   },
