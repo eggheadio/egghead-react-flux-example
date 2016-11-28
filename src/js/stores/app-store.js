@@ -1,6 +1,5 @@
 var AppDispatcher = require('../dispatchers/app-dispatcher');
 var AppConstants = require('../constants/app-constants');
-var assign = require('react/lib/Object.assign');
 var EventEmitter = require('events').EventEmitter;
 
 var CHANGE_EVENT = 'change';
@@ -62,7 +61,7 @@ function _cartTotals(){
   return {'qty': qty, 'total': total};
 }
 
-var AppStore = assign(EventEmitter.prototype, {
+var AppStore = Object.assign(EventEmitter.prototype, {
   emitChange: function(){
     this.emit(CHANGE_EVENT)
   },
